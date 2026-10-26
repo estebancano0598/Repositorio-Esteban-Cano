@@ -105,3 +105,6 @@ Despliegue y verificación en línea:
 - Plataforma: GitHub Pages.
 - URL Pública: https://estebancano0598.github.io/Rueda-libre/
 - Verificación: Navegación entre secciones, envío de formulario con validaciones HTML5 y assets verificados sin errores en consola.
+
+--------------------------------------------------------------
+
