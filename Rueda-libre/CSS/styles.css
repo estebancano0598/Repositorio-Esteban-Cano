@@ -48,3 +48,53 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: underline;
     outline: none; 
 }
+
+.btn-cta {
+    display: inline-block;
+    background-color: var(--naranja-pedal);
+    color: var(--crema);
+    padding: var(--espacio-sm) var(--espacio-md);
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: var(--font-titulo);
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+/* Estados interactivos para el botón CTA */
+.btn-cta:hover,
+.btn-cta:focus {
+    background-color: var(--verde-ruta);
+    color: var(--crema);
+    text-decoration: none;
+    outline: none;
+}
+
+/* Estilos para la cabecera y sección Hero */
+header {
+    background-color: var(--azul-noche);
+    color: var(--crema);
+    padding: var(--espacio-lg);
+    text-align: center;
+}
+
+header h1 {
+    color: var(--crema);
+    margin-bottom: var(--espacio-sm);
+}
+
+/* Contenedor principal de secciones */
+main {
+    padding: var(--espacio-lg);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos para las imágenes institucionales (como la bicicleta) */
+main img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: var(--espacio-md) 0;
+}

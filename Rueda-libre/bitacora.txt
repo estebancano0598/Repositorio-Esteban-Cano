@@ -115,3 +115,16 @@ Comparación de herencia en DevTools:
 
 ---------------------------------------------------------------
 
+Registro de estados interactivos y resolución final:
+- Resolución del conflicto de especificidad: Se unificaron los selectores #menu a (para estilos generales) y #menu a.activo (para el estado activo con especificidad 0,2,1), permitiendo que la página actual resalte correctamente en verde sin utilizar !important.
+- Estados interactivos implementados: Se añadió el bloque agrupado #menu a:hover y #menu a:focus utilizando la variable institucional --naranja-pedal y subrayado, asegurando tanto una buena experiencia visual (UX) como accesibilidad por teclado (a11y).
+- Sincronización de rutas: Se ajustaron de forma uniforme las rutas relativas de las hojas de estilo y de los enlaces HTML entre la raíz y la carpeta subalterna (paginas/), logrando que los estilos del menú carguen de manera óptima en todo el sitio.
+
+-----------------------------------------------------------------
+
+Registro del botón de llamada a la acción (CTA):
+- Creación de clase específica: Se implementó la clase .btn-cta para los botones de llamada a la acción ("Reservar ahora"), utilizando variables institucionales (--naranja-pedal y --crema) para el diseño base y la tipografía de títulos.
+- Transiciones y estados interactivos: Se configuraron los estados :hover y :focus utilizando la variable --verde-ruta para ofrecer feedback visual inmediato y garantizar accesibilidad en la navegación por teclado.
+- Uso de selectores limpios: Se aplicó la clase directamente sobre los enlaces de acción, manteniendo una baja especificidad y evitando por completo el uso de !important.
+
+-------------------------------------------------------------------
