@@ -16,7 +16,7 @@
     --espacio-lg: 2rem;
 }
 
-/* Aplicación de estilos base al cuerpo mediante herencia */
+
 body {
     font-family: var(--font-texto);
     color: var(--azul-noche);
@@ -25,7 +25,26 @@ body {
     padding: 0;
 }
 
-/* Selector agrupado para aplicar la fuente de títulos */
+
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-titulo);
+
+}
+
+#menu a {
+    color: var(--gris-asfalto);
+    text-decoration: none;
+}
+
+#menu a.activo {
+    color: var(--verde-ruta);
+    font-weight: 600;
+}
+
+
+#menu a:hover,
+#menu a:focus {
+    color: var(--naranja-pedal);
+    text-decoration: underline;
+    outline: none; 
 }

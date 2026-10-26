@@ -108,3 +108,10 @@ Despliegue y verificación en línea:
 
 --------------------------------------------------------------
 
+Comparación de herencia en DevTools:
+
+- Propiedad heredada (font-family): El elemento <p> hereda automáticamente la tipografía Open Sans.
+- Propiedad no heredada (margin): Los márgenes y rellenos no se heredan por defecto.
+
+---------------------------------------------------------------
+
