@@ -1,0 +1,107 @@
+URL: http://127.0.0.1:5500/Rueda_Libre/index1.html
+Protocolo: http
+Host: 127.0.0.1
+Puerto: 5500
+Ruta: /Rueda_Libre/index1.html
+Método de la petición: GET
+Código de estado (Status): 304
+
+
+----------------------------------------------
+
+
+Codigo de estado punto 5: 404 y significa que la ruta no pertence a las carpetas del proyecto.
+
+
+
+-----------------------------------------------
+
+
+función del html: es el encargado de crear la estructura general de los textos, enlaces y demás herramientas que ayudan a visualizar el contenido de la pagina. Ejemplo: agregar el titulo dentro de la etiqueta <title>.
+función del CSS: es el encargado de brindar estilo a la pagina, colores de fondo, colores de los textos y adecuaciones esteticas de los elementos en la pagina. Ejemplo: acambiar el color del fondo del titulo para enfatizar la importancia de el encabezado de la pagina.
+función de Java: es el encargado de crear las funciones con las que podra interactuar el usuario. Ejemplo: crear una tarjeta intectiva para cuando el cursor pase sobre ella, poder explicar detalles sobre los servicios prestados.
+
+
+------------------------------------------------
+
+
+Esquema de regiones y estructuras semánticas:
+
+(<header>)
+- Titulo /logo del sitio.
+
+(<Nav>)
+- Menú de navegación principal (<ul>, <li>, <a>)
+.................................................
+(<main>)
+
+    <section>
+    - Contenido principal / presentación
+
+    <article>
+    -Bloques con contenido independiente
+ .................................................
+(<footer>)
+- Nombre del negocio, correo y copyright
+
+
+---------------------------------------------------
+
+Justificación de tipos de datos:
+
+<input type="text"> = permite escribir texto libre, eso lo convierte en el perfecto para escribir el nombre del usuario.
+<input type="email"> = este tipo de dato, valida automaticamente que el texto introduccido tenga un formato valido con el @.
+<input type="tel"> = este tipo de dato esta optimizado para números de telefono.
+
+-----------------------------------------------------
+
+Tabla de pruebas de validación -formulario de reservas:
+ 
+1. Campo: Nombre completo. Datos de prueba: re. Resultado esperado:error, cantidad minima permitida no alcanzada. Resultado obtenido: Prolonga este texto a 3 caracteres o más (actualmente tiene 2 caracteres).
+2. Campo: Numero de documento. Datos de prueba: 544. Resultado esperado:error, numero no valido. Resultado obtenido: Hazlo coincidir con el formato solicitado.
+3. Campo: Correo electronico. Datos de prueba: esteban.gmail.com. Resultado esperado:error, formato no valido. Resultado obtenido: Incluye "@" en la dirección de correo electronico.
+4. Campo: Celular.  Datos de prueba: hola Resultado esperado: error, introduccir un formato valido.  Resultado obtenido: Debe de tener 10 digitos y empezar por el número 3 (Ej: 3001234567).
+5. Campo: Fecha del alquiler. Datos de prueba:11/11/2027 Resultado esperado: error, fecha no valida.  Resultado obtenido: 
+6. Campo: Cantidad de bicicletas. Datos de prueba: 9. Resultado esperado: error, la cantidad maxima es 6.  Resultado obtenido: El valor debe ser menor o igual que 6.
+7. Campo: Politicas de alquiler y seguridad.  Datos de prueba: sin seleccionar el dato. Resultado esperado: error, debes marcar la casilla  Resultado obtenido: marca la casilla si deseas continuar.
+8. Campo: Comentarios o peticiones especiales. Datos de prueba: texto aleatorio de 300 caracteres. Resultado esperado: error, maximo 300 caracteres.  Resultado obtenido: no muestra error pero no deja continuar escribiendo.
+
+---------------------------------------------------------
+
+1. Tenia una imagen decorativa con texto y deje el alt sin texto para que el tab no pare en la imagen.
+2. El recorrido con Tab en el formulario presentaba un salto poco intuitivo entre elementos, verifique la estructura secuencial del código para garantizar que el tab avance de forma lógica de arriba hacia abajo.
+3. Estaba mal el orden de los encabezados saltaba directo de <h1> a <h3> en la sección de bienvenida. Ajuste la jerarquía utilizando un único <h1> para el título principal y las otras etiquetas con <h2> consecutivas para las secciones.
+4. Resevas no tenia el atributo de idioma "es" en lang. Cambie "en" por `lang="es"` en la etiqueta <html>.
+5. no logré encontrar un quinto elemento a cambiar en las tres paginas.
+
+-----------------------------------------------------------
+
+Resultados de contrastes propuestos:
+
+Combinacion evaluada: Texto blanco sobre Verde Ruta.  Relación de contraste (DevTools): ~5.31.  Clasificación WCAG: Apto para texto normal. 
+Combinacion evaluada: Texto blanco sobre Naranja Pedal. Relación de contraste (DevTools): ~2.21.  Clasificación WCAG: No apto para texto normal.
+Combinacion evaluada: Azul Noche sobre Naranja Pedal.  Relación de contraste (DevTools): ~7.2.  Clasificación WCAG: Apto para texto normal.
+Combinacion evaluada: Azul Noche sobre Crema  Relación de contraste (DevTools): ~14.82.  Clasificación WCAG: Apto para texto normal.
+Combinacion evaluada: Gris Asfalto sobre Crema.  Relación de contraste (DevTools): ~5.56.  Clasificación WCAG: Apto para texto normal.
+Combinacion evaluada: Verde Ruta sobre Crema. Relación de contraste (DevTools): ~4.93.   Clasificación WCAG: Apto para texto normal.
+Combinacion evaluada: Naranja Pedal sobre Crema. Relación de contraste (DevTools): ~2.05.   Clasificación WCAG: No apto para texto normal (solo texto grande).
+Combinacion evaluada: Texto blanco sobre Azul Noche. Relación de contraste (DevTools): ~15.97.  Clasificación WCAG: Apto para texto normal.
+
+Mapa de uso de color definido:
+
+Fondo general (background-color): Crema (#FAF6EF) para dar una lectura suave y cómoda.
+Títulos y encabezados (h1, h2, h3): Azul Noche (#14213D) por su excelente contraste sobre el fondo crema.
+Texto secundario y párrafos: Gris Asfalto (#5B6470) sobre fondo crema (cumple perfectamente con 5.56).
+
+Botones y Enlaces:
+Verde Ruta (#1E7A4F) con texto blanco para los botones principales y enlaces (relación de 5.31, totalmente apto).
+Naranja Pedal (#F39A2B) reservado para destacados secundarios o elementos gráficos grandes, ya que sobre fondo claro no cumple para texto pequeño (2.05).
+
+-------------------------------------------------------------
+
+Despliegue y verificación en línea:
+
+- Estado: Desplegado y verificado exitosamente.
+- Plataforma: GitHub Pages.
+- URL Pública: https://estebancano0598.github.io/Rueda-libre/
+- Verificación: Navegación entre secciones, envío de formulario con validaciones HTML5 y assets verificados sin errores en consola.

@@ -1,0 +1,31 @@
+:root {
+    
+    --azul-noche: #14213d;
+    --gris-asfalto: #5b6470;
+    --verde-ruta: #1e7a4f;
+    --naranja-pedal: #f39a2b;
+    --crema: #faf6ef;
+
+  
+    --font-titulo: 'Montserrat', sans-serif;
+    --font-texto: 'Open Sans', sans-serif;
+
+   
+    --espacio-sm: 0.5rem;
+    --espacio-md: 1rem;
+    --espacio-lg: 2rem;
+}
+
+/* Aplicación de estilos base al cuerpo mediante herencia */
+body {
+    font-family: var(--font-texto);
+    color: var(--azul-noche);
+    background-color: var(--crema);
+    margin: 0;
+    padding: 0;
+}
+
+/* Selector agrupado para aplicar la fuente de títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-titulo);
+}
