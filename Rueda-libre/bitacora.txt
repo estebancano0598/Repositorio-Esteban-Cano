@@ -128,3 +128,11 @@ Registro del botón de llamada a la acción (CTA):
 - Uso de selectores limpios: Se aplicó la clase directamente sobre los enlaces de acción, manteniendo una baja especificidad y evitando por completo el uso de !important.
 
 -------------------------------------------------------------------
+
+Medición de modelo de caja:
+- Con box-sizing: border-box activado: El ancho total de la tarjeta .tarjeta-servicio incluye de forma interna los 16px de padding y el borde de 1px, manteniendo el ancho total controlado por su contenedor principal sin desbordarse.
+- Sin box-sizing (comportamiento por defecto content-box): Los rellenos y bordes sumarían espacio extra hacia afuera, ampliando el ancho real de la tarjeta.
+- Verificado y registrado correctamente en Firefox DevTools (Computed).
+
+-------------------------------------------------------------------
+

@@ -223,3 +223,51 @@ textarea:focus {
     display: inline-block;
 }
 
+
+.tarjeta-servicio {
+    position: relative; /
+}
+
+.etiqueta-nuevo {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--naranja-pedal);
+    color: var(--crema);
+    font-family: var(--font-titulo);
+    font-size: 0.85rem;
+    padding: var(--espacio-xs) var(--espacio-sm);
+    border-radius: 4px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.btn-whatsapp {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #25d366; 
+    color: #ffffff;
+    padding: var(--espacio-sm) var(--espacio-md);
+    border-radius: 50px;
+    font-family: var(--font-titulo);
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000; 
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: #20ba5a;
+    transform: scale(1.05);
+}
+
+.btn-whatsapp:focus {
+    outline: 3px solid var(--azul-noche);
+    outline-offset: 2px;
+}
