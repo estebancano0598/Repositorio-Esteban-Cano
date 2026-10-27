@@ -98,3 +98,128 @@ main img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: var(--espacio-md) 0;
 }
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 65rem; 
+    margin: 0 auto;  
+    padding: var(--espacio-lg);
+}
+
+.portada, header {
+    min-height: 10vh; 
+}
+
+
+.tarjeta-servicio {
+    background-color: var(--crema);
+    border: 1px solid var(--gris-asfalto);
+    border-radius: 8px;
+    padding: var(--espacio-md);
+    margin-bottom: var(--espacio-lg);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+
+.tarjeta-servicio img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: var(--espacio-sm);
+}
+
+.tarjeta-servicio h3 {
+    font-family: var(--font-titulo);
+    color: var(--azul-noche);
+    margin-top: 0;
+    margin-bottom: var(--espacio-sm);
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: var(--espacio-lg);
+    background-color: var(--crema);
+}
+
+th, td {
+    padding: var(--espacio-sm) var(--espacio-md); 
+    text-align: left;
+    border: 1px solid var(--gris-asfalto);
+}
+
+th {
+    background-color: var(--azul-noche); 
+    color: var(--crema);
+    font-family: var(--font-titulo);
+}
+
+
+tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+
+form {
+    background-color: var(--crema);
+    border: 1px solid var(--gris-asfalto);
+    border-radius: 8px;
+    padding: var(--espacio-lg);
+    max-width: 36rem;
+    margin: 0 auto;
+}
+
+.grupo-formulario {
+    margin-bottom: var(--espacio-md); 
+}
+
+label {
+    display: block; 
+    font-family: var(--font-titulo);
+    color: var(--azul-noche);
+    margin-bottom: var(--espacio-xs);
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%; 
+    padding: var(--espacio-sm);
+    border: 1px solid var(--gris-asfalto);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #ffffff;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--naranja-pedal);
+    border-color: transparent;
+}
+
+
+#menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: center;
+    gap: var(--espacio-md); 
+}
+
+#menu li {
+    display: inline-block;
+}
+
